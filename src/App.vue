@@ -1,13 +1,11 @@
 <template>
-
-	<h1 class="text-xl font-gray-500">Hello World</h1>
-
+   <Home></Home>
+   <NavBar></NavBar>
 </template>
 
-<style>
-
-	* {
-		font-family: "Poppins", sans-serif;
-	}
-
-</style>
+<script setup>
+   
+   import Home from './views/Home.vue'
+   import NavBar from './components/NavBar.vue'
+   
+</script>
