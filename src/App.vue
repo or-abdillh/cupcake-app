@@ -1,5 +1,4 @@
 <template>
-   <Home></Home>
    <NavBar></NavBar>
 </template>
 
