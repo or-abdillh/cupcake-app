@@ -1,0 +1,8 @@
+{
+   "name": "Cupcake App",
+   "short_name": "Cupcake App",
+   "orientation": "potrait",
+   "display": "standalone",
+   "background": "#FFFFFF",
+   "theme_color": "#FFFFFF"
+}

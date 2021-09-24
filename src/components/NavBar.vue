@@ -2,7 +2,7 @@
    <section class="nav-bar">
       <template v-for="(item , index) in navItems" :kkey="index">
          <div @click="currentNav = item" :class="currentNav === item ? 'active' : ''" class="nav-box">
-            <i class="duration-300 text-2xl" :class="item" ></i>
+            <i class="duration-300 text-3xl" :class="item" ></i>
          </div>
       </template>
    </section>
@@ -11,7 +11,7 @@
 <style>
    
    .nav-bar {
-      @apply w-full fixed bottom-0 py-3 px-7 flex justify-between items-center;
+      @apply w-full fixed bottom-0 py-4 px-7 flex justify-between items-center;
       background: #31353A;
    }
    
