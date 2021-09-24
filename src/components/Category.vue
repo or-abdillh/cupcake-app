@@ -5,7 +5,10 @@
       </div>
       <div class="category-item">
          <template v-for="(item, index) in categoryItems" :key="index">
-            <h1  @click="currentCategory = item" :class="currentCategory === item ? 'active' : ''" >{{ item }}</h1>
+            <div :class="currentCategory === item ? 'active' : ''" class="item-wrapper">
+               <h1  @click="currentCategory = item" >{{ item }}</h1>
+               <span class="indicator" ></span>
+            </div>
          </template>
       </div>
    </section>   
@@ -25,9 +28,18 @@
       @apply text-3xl font-semibold duration-300;
    }
    
-   .active {
+   .category .category-item .indicator {
+      @apply inline-block p-2 rounded-full mt-7 mb-4;
+   }
+   
+   .active h1 {
       @apply text-gray-800;
    }
+   
+   .active .indicator {
+      @apply bg-green-500;
+   }
+   
 </style>
 
 <script setup>
