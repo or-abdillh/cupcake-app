@@ -6,7 +6,7 @@
                <div class="card-header">
                   <i @click="btnLove" class="far fa-heart text-pink-500 text-xl" ></i>
                   <img :src="img" class="mx-auto" width="130" :alt="img" />
-                  <h1 class="font-medium mt-3" >Bake a butter cake</h1>
+                  <h1 class="font-medium duration-300 text-gray-700 card-title mt-3" >Bake a butter cake</h1>
                   <small class="font-medium text-gray-500" >$ 8.20</small>
                </div>
                <button @click="btnAddCart" type="button" class="card-footer">
@@ -21,8 +21,9 @@
 <style scoped>
    
    .card-wrapper {
-      @apply w-full px-7 py-3 mt-5 flex overflow-scroll;
+      @apply w-full px-7 py-3 mt-5 mb-10 flex overflow-scroll;
       font-family: 'Poppins', Sans-Serif;
+      user-select: none;
    }
    
    .card-wrapper::-webkit-scrollbar {
@@ -31,9 +32,9 @@
    }
    
    .card-wrapper .card-layout {
-      @apply overflow-hidden mr-10 pb-10 duration-300 relative rounded-3xl bg-gray-50 shadow;
+      @apply overflow-hidden mr-10 pb-12 pt-3 duration-300 relative rounded-3xl bg-gray-50 shadow;
       min-width: 60%;
-      animation: pop-up .3s ease forwards;
+      animation: pop-up .55s ease forwards;
    }
    
    .card-wrapper .card-layout .card-header {
@@ -54,8 +55,12 @@
    }
    
    .fa-heart {
-      animation: shake .3s ease-in-out forwards;
+      animation: pop-up .3s ease-in-out forwards;
    }
+   
+   .card-title:active {
+      @apply text-pink-400;
+   } 
    
    @keyframes slide {
       from {
@@ -68,19 +73,11 @@
    
    @keyframes pop-up {
       from {
-         transform: scale(.75);
+         transform: translateY(-40%) scale(.75);
          opacity: .85;
       } to {
-         transform:  scale(1);
+         transform: translateY(0) scale(1);
          opacity: 1;
-      }
-   }
-   
-   @keyframes shake {
-      from {
-         transform: scale(.75);
-      } to {
-         transform: scale(1);
       }
    }
    
@@ -102,9 +99,11 @@
    }
    
    //Handler for event button add cart click
-   const emit = defineEmits(['addToCart'])
+   const emit = defineEmits(['addToCart', 'changeTab'])
    
    const btnAddCart = () => {
       emit('addToCart')
    }
+   
+   //Handler for e
 </script>
