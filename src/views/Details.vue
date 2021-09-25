@@ -31,6 +31,18 @@
       @apply font-medium text-gray-800 text-2xl;
    }
    
+   .main-title, .sub-title {
+      animation: pop-from-left .55s forwards;
+   }
+   
+   @keyframes pop-from-left {
+      from {
+         transform: translateX(-50%);
+      } to {
+         transform: translateX(0);
+      }
+   }
+   
 </style>
 
 <script setup>

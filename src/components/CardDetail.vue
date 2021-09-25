@@ -21,9 +21,9 @@
             lorem ipsum sit amet dolor is text dummy sit amet dolor is text dummy
          </p>
       </div>
-      <button class="btn-footer" >
+      <div class="btn-footer" >
          Add to box
-      </button>
+      </div>
       <NavBar></NavBar>
    </section>
 </template>
@@ -44,10 +44,12 @@
    
    .img-preview {
       @apply absolute right-5 -top-36;
+      animation: slide-pop .55s forwards;
    }
    
    .badge {
       @apply bg-gray-50 rounded-full text-center px-3 py-2 absolute -top-5 shadow;
+      animation: slide-pop .55s forwards;
    }
    
    .box-qty {
@@ -63,15 +65,26 @@
    }
    
    .btn-footer {
-      @apply w-full py-7 font-medium text-gray-100;
+      @apply w-full py-7 duration-300 font-medium text-gray-100 text-center;
       background: #F96094;
    }
    
+   .btn-footer:active {
+      letter-spacing: 1.2px;
+   }
+   
+   @keyframes slide-pop {
+      from {
+         transform: scale(.5) rotate(25deg) translate(10%, -15%);
+      } to {
+         transform: scale(1) rotate(0deg) translate(0, 0);
+      }
+   }
 </style>
 
 <script setup >
    
-   import { ref, watch } from 'vue'
+   import { ref, watch, defineProps } from 'vue'
    import NavBar from './NavBar.vue'
    
    const amountOfQty = ref(0)

@@ -10,7 +10,7 @@
    import Alert from './components/Alert.vue'
    import { ref, computed, onMounted, watch } from 'vue'
    
-   const currentTab = ref(Home)
+   const currentTab = ref(Details)
    const change = tab => {
       if ( tab === 'home' ) currentTab.value = Home
       else currentTab.value = Details
