@@ -21,7 +21,7 @@
 <style scoped>
    
    .card-wrapper {
-      @apply w-full px-7 py-3 mt-5 mb-10 flex overflow-scroll;
+      @apply w-full px-7 py-4 mt-5 mb-10 flex overflow-scroll;
       font-family: 'Poppins', Sans-Serif;
       user-select: none;
    }
@@ -32,7 +32,7 @@
    }
    
    .card-wrapper .card-layout {
-      @apply overflow-hidden mr-10 pb-12 pt-3 duration-300 relative rounded-3xl bg-gray-50 shadow;
+      @apply flex flex-wrap overflow-hidden mr-10 pt-3 duration-300 rounded-3xl bg-gray-50 shadow;
       min-width: 60%;
       animation: pop-up .55s ease forwards;
    }
@@ -42,7 +42,7 @@
    }
    
    .card-wrapper .card-layout .card-footer {
-      @apply py-4 block w-full absolute bottom-0 flex justify-center items-center;
+      @apply py-4 block w-full self-end flex justify-center items-center;
       background: #F96094;
    }
    
