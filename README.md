@@ -1,7 +1,7 @@
 <h3 align="center">CUPCAKE APP</h3>
 <p align="center">Slicing project #02</p>
 
-<img src="./src/assets/banner-cupc-app.png" width="100%" alt="">
+<img src="./src/assets/banner-cupcake-app.png" width="100%" alt="">
 
 ### About
 This is my projects to make UI using front end tech 
