@@ -17,11 +17,11 @@
 <style>
    
    .category {
-      @apply w-full px-7 py-3;
+      @apply w-full px-7 mt-5;
    }
    
    .category .category-item {
-      @apply flex justify-between mt-2 text-gray-400;
+      @apply flex justify-between text-gray-400;
    }
    
    .category .category-item h1 {
@@ -29,7 +29,7 @@
    }
    
    .category .category-item .indicator {
-      @apply inline-block p-2 rounded-full mt-7 mb-4;
+      @apply inline-block duration-300 p-2 rounded-full mt-7 mb-2;
    }
    
    .active h1 {

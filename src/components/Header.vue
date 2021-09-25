@@ -13,7 +13,7 @@
 <style>
    
    .header {
-      @apply w-full px-7 pt-5 pb-3 flex justify-between;
+      @apply w-full px-7 py-3 flex justify-between;
    }
    
    .header .header-box i {

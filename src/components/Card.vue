@@ -21,7 +21,7 @@
 <style scoped>
    
    .card-wrapper {
-      @apply w-full px-7 py-4 mt-5 mb-10 flex overflow-scroll;
+      @apply w-full px-7 mt-10 mb-1 flex overflow-scroll;
       font-family: 'Poppins', Sans-Serif;
       user-select: none;
    }
