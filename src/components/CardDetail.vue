@@ -1,7 +1,7 @@
 <template>
    <section class="card-wrapper">
       <div class="card-detail-header">
-         <img :src="store.state.imgPreview" class="img-preview" width="200" />
+         <img :src="store.state.imgPreview" class="img-preview" width="250" />
          <span class="badge">
             <i @click="badgeClick" class="far fa-heart text-xl text-gray-700" ></i>
          </span>
@@ -43,7 +43,7 @@
    }
    
    .img-preview {
-      @apply absolute right-5 -top-36;
+      @apply absolute right-5 -top-40;
       animation: slide-pop .55s forwards;
    }
    
