@@ -1,7 +1,7 @@
 <template>
    <section class="card-wrapper">
       <div class="card-detail-header">
-         <img src="/cupcake-2.png" class="img-preview" width="200" />
+         <img :src="store.state.imgPreview" class="img-preview" width="200" />
          <span class="badge">
             <i @click="badgeClick" class="far fa-heart text-xl text-gray-700" ></i>
          </span>
@@ -86,6 +86,7 @@
    
    import { ref, watch, defineProps } from 'vue'
    import NavBar from './NavBar.vue'
+   import store from '../store'
    
    const amountOfQty = ref(0)
    watch(amountOfQty, value => {

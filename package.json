@@ -10,7 +10,8 @@
     "autoprefixer": "^10.3.5",
     "postcss": "^8.3.7",
     "tailwindcss": "^2.2.15",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.0",
