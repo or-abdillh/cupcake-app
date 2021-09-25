@@ -18,6 +18,7 @@
    
    .category {
       @apply w-full px-7 mt-5;
+      user-select: none;
    }
    
    .category .category-item {
