@@ -18,10 +18,20 @@
    
    .header .header-box i {
       @apply duration-300 text-2xl text-gray-400;
+      animation: slide-from-left .3s forwards; 
    }
    
    .header-box .notif {
       @apply absolute -top-2 -right-3 block rounded-full py-1 px-2 text-xs text-gray-50 bg-yellow-600 flex justify-center items-center;
+      animation: slide-from-left .3s forwards;
+   }
+   
+   @keyframes slide-from-left {
+      from {
+         transform: translateX(-25%) scale(.75) rotate(45deg);
+      } to {
+         transform: translateX(0) scale(1) rotate(0deg);
+      }
    }
    
 </style>

@@ -11,7 +11,7 @@
 <style>
    
    .nav-bar {
-      @apply self-end fixed bottom-0 w-full py-4 px-7 flex justify-between items-center;
+      @apply mt-0 w-full py-4 px-7 flex justify-between items-center;
       background: #31353A;
    }
    
@@ -20,7 +20,7 @@
    }
    
    .nav-bar .active i {
-      @apply text-gray-100 translate-y-12;
+      @apply text-gray-100;
    }
 </style>
 

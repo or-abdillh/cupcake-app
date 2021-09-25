@@ -8,7 +8,7 @@
    import Details from './views/Details.vue'
    import { ref } from 'vue'
    
-   const currentTab = ref(Details)
+   const currentTab = ref(Home)
    const change = tab => {
       if ( tab === 'home' ) currentTab.value = Home
       else currentTab.value = Details

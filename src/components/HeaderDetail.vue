@@ -16,11 +16,21 @@
    }
    
    .header .header-box i {
-      @apply duration-300 text-2xl text-gray-400;
+      @apply text-2xl text-gray-400;
+      transition: .3s transform!important;
+      animation: slide-from-left .3s forwards;
    }
    
    .fa-chevron-left:active {
-      transform: scale(1.5);   
+      transform: scale(1.5)!important;   
+   }
+   
+   @keyframes slide-from-left {
+      from {
+         transform: translateX(-25%) scale(.75) rotate(45deg);
+      } to {
+         transform: translateX(0) scale(1) rotate(0deg);
+      }
    }
    
 </style>
@@ -34,7 +44,7 @@
    const btnBack = () => {
       setTimeout( () => {
          emit('changeTab')
-      }, 5)
+      }, 500)
    }
    
 </script>

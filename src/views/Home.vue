@@ -1,5 +1,5 @@
 <template>
-   <section class="min-h-screen">
+   <section class="home">
       <Header :amount-of-cart="amountsOfCart" ></Header>
       <Category></Category>
       <section class="px-7 mb-3">
@@ -9,6 +9,14 @@
    </section>
    <NavBar></NavBar>
 </template>
+
+<style>
+   
+   .home {
+      @apply min-h-screen flex flex-wrap;
+   }
+   
+</style>
 
 <script setup >
    
