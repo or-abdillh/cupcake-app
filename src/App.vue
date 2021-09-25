@@ -1,14 +1,17 @@
 <template>
-   <component :is="currentTab" ></component>
-   <NavBar></NavBar>
+   <component v-on:change-tab-to-details="currentTab = Details" v-on:change-tab-to-home="currentTab = Home" :is="currentTab" ></component>
 </template>
 
 <script setup>
    
    import Home from './views/Home.vue'
-   import NavBar from './components/NavBar.vue'
-   import { reactive } from 'vue'
+   import Details from './views/Details.vue'
+   import { ref } from 'vue'
    
-   const currentTab = reactive(Home)
+   const currentTab = ref(Details)
+   const change = tab => {
+      if ( tab === 'home' ) currentTab.value = Home
+      else currentTab.value = Details
+   }
    
 </script>

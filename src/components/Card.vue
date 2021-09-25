@@ -6,7 +6,7 @@
                <div class="card-header">
                   <i @click="btnLove" class="far fa-heart text-pink-500 text-xl" ></i>
                   <img :src="img" class="mx-auto" width="130" :alt="img" />
-                  <h1 class="font-medium duration-300 text-gray-700 card-title mt-3" >Bake a butter cake</h1>
+                  <h1 @click="btnTitle()" class="font-medium duration-300 text-gray-700 card-title mt-3" >Bake a butter cake</h1>
                   <small class="font-medium text-gray-500" >$ 8.20</small>
                </div>
                <button @click="btnAddCart" type="button" class="card-footer">
@@ -105,5 +105,10 @@
       emit('addToCart')
    }
    
-   //Handler for e
+   //Handler for tag title click 
+   const btnTitle = () => {
+      setTimeout( () => {
+         emit('changeTab')
+      }, 500)
+   }
 </script>

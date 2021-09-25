@@ -11,7 +11,7 @@
 <style>
    
    .nav-bar {
-      @apply w-full fixed bottom-0 py-4 px-7 flex justify-between items-center;
+      @apply self-end fixed bottom-0 w-full py-4 px-7 flex justify-between items-center;
       background: #31353A;
    }
    
