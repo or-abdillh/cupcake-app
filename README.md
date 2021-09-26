@@ -8,6 +8,9 @@ This is my projects to make UI using front end tech
 
 Where the ideas and the concept i use from any other designer UI/UX from Instagram or Dribbble
 
+### Original design
+by [@harshil_designer](https://www.instagram.com/p/BwFhLlOhJ2S/?utm_medium=copy_link)
+
 ### Languages and Tools
 - Vue Js 3
 - Tailwind
@@ -25,7 +28,7 @@ Just available for mobile device
 - [See documentation](https://vitejs.dev/guide/)
 
 ### Clone This Repo
-- <code>git clone https://github.com/or-abdillh/house-finder-app.git </code>
+- <code>git clone https://github.com/or-abdillh/cupcake-app.git </code>
 - <code>cd cupcake-app</code>
 - <code>npm install</code>
 - <code>npm run dev</code>
@@ -34,8 +37,8 @@ Just available for mobile device
 
 ### Demo 
 - [Cupcake App](https://cupcake-app-one.vercel.app/)
-- [Reels Instagram](https://www.instagram.com/reel/CT-DtYYF6Gi/?utm_medium=copy_link)
+- [Reels Instagram](https://www.instagram.com/reel/CUQEA_qlFEU/?utm_medium=copy_link)
 
 [Oka R Abdillah ](http://github.com/or-abdillh)
 <br>
-Last edited on : 25/9/2021
+Last edited on : 26/9/2021
